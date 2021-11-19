@@ -4,7 +4,7 @@ use github cli gh repo clone mrdatawolf/inventory_converter .  make sure you are
 npx create-next-app@latest --typescript
 cd into the folder and rn npm run dev
 npm i prisma --save-dev
-npm i next-crud
+npm i -S @premieroctet/next-crud
 npm i exceljs
 create .gitignore in db folder.  do a * inside of it.
 npx prisma init
