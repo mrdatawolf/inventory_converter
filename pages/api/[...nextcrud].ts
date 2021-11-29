@@ -1,9 +1,9 @@
-import { User, Color, Vendor} from '@prisma/client'
+import { User, Color, ModelName} from '@prisma/client'
 import NextCrud, { PrismaAdapter } from '@premieroctet/next-crud'
 import { prisma } from '../../db'
 
 const handler = NextCrud({
-    adapter: new PrismaAdapter<User | Color, Vendor>({
+    adapter: new PrismaAdapter<User | Color, ModelName>({
       prismaClient: prisma,
     }),
     swagger: {
